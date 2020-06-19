@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="260.0" prefWidth="391.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller ="clientfx.InfoController">
+   <children>
+      <JFXToolbar layoutX="-11.0" prefHeight="80.0" prefWidth="402.0" style="-fx-background-color: #76B342;">
+         <center>
+            <JFXTextField alignment="CENTER" editable="false" focusColor="#46af50" prefHeight="31.0" prefWidth="554.0" style="-fx-border-color: #76B342;" text="D-A-S-H Instant Messenger" unFocusColor="#76b342" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+            </JFXTextField>
+         </center>
+      </JFXToolbar>
+      <JFXTextField fx:id="name" onAction="#nAction" layoutX="150.0" layoutY="135.0" prefHeight="25.0" prefWidth="135.0" />
+      <Label layoutX="35.0" layoutY="135.0" prefHeight="25.0" prefWidth="61.0" text="Username" />
+      <JFXTextField fx:id="ip" onAction="#pAction" layoutX="150.0" layoutY="200.0" />
+      <Label layoutX="41.0" layoutY="200.0" prefHeight="25.0" prefWidth="61.0" text="IP Address" />
+      <JFXButton fx:id="ok" onAction="#ok" layoutX="308.0" layoutY="200.0" text="OK" />
+   </children>
+</AnchorPane>
+
